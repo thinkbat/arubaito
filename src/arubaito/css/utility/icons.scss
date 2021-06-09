@@ -4,7 +4,7 @@
 // All tokens for font styles can be found in the token library under size/base.json
 // example output: .icon-xxs, .icon-md, .icon-xxl etc.
 $size: map-deep-get($gdm-tokens, 'size', 'base', 'gdm');
-// $get-path-to-assets: '~@capterra/gdm-design-tokens/assets/icons';
+// $get-path-to-assets: '~@thinkbat/gdm-design-tokens/assets/icons';
 $get-path-to-assets: '~icons';
 
 

@@ -21,7 +21,7 @@ jobs:
           rm -Rf src scripts node_modules README.md *.js *.json
           mv -i styleguide docs
           git add .
-          git config --global user.email "github@capterra.com"
+          git config --global user.email "github@thinkbat.com"
           git config --global user.name "GitHub Action"
           git commit -m "Generating styleguide"
           git push -f origin gh-pages
