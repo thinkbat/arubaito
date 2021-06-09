@@ -138,7 +138,7 @@ module.exports = {
         path.resolve('./node_modules'),
       ],
       alias: {
-        '@tokens': path.resolve(__dirname, './dist/gdm-tokens/web'),
+        '@tokens': path.resolve(__dirname, './dist'),
       },
     },
     module: {
