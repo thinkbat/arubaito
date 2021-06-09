@@ -1,6 +1,6 @@
 {
   "name": "@thinkbat/arubaito",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "GDM Component & Token Library",
   "main": "/dist/index.js",
   "files": [
