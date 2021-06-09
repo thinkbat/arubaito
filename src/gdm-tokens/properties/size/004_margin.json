@@ -1,0 +1,95 @@
+{
+  "size": {
+    "margin": {
+      "gdm": {
+        "title":          { "value": "0 0 {size.base.gdm.sm.value} 0" },
+        "subtitle":       { "value": "0 0 {size.base.gdm.xs.value} 0" },
+        "alert":          { "value": "0" },
+        "label":          { "value": "0 0 {size.base.gdm.xs.value} 0" },
+        "link": {
+          "default":      { "value": "0" },
+          "dark":         { "value": "0" },
+          "light":        { "value": "0" }
+        },
+        "heading": {
+          "sm":           { "value": "0 0 {size.base.gdm.xxs.value} 0" },
+          "lg":           { "value": "0 0 {size.base.gdm.xs.value} 0" }
+        },
+        "paragraph": {
+          "sm":           { "value": "0 0 {size.base.gdm.xxs.value} 0" },
+          "lg":           { "value": "0 0 {size.base.gdm.sm.value} 0" }
+        },
+        "notification": {
+          "sm":           { "value": "0" },
+          "lg":           { "value": "0" }
+        },
+        "flash": {
+          "top":          { "value": "0" },
+          "right":        { "value": "0" },
+          "bottom":       { "value": "{size.base.gdm.sm.value}" },
+          "left":         { "value": "0" }
+        },
+        "tooltip": {
+          "top":          { "value": "14" },
+          "right":        { "value": "14" },
+          "bottom":       { "value": "14" },
+          "left":         { "value": "14" }
+        },
+        "nav-item": {
+          "top":          { "value": "0" },
+          "right":        { "value": "1" },
+          "bottom":       { "value": "0" },
+          "left":         { "value": "0" }
+        },
+        "nav-dropdown": {
+          "top":          { "value": "{size.base.gdm.sm.value}" },
+          "right":        { "value": "{size.base.gdm.sm.value}" },
+          "bottom":       { "value": "{size.base.gdm.sm.value}" },
+          "left":         { "value": "{size.base.gdm.sm.value}" }
+        },
+        "accordion-title": {
+          "top":          { "value": "0" },
+          "right":        { "value": "0" },
+          "bottom":       { "value": "0" },
+          "left":         { "value": "0" }
+        },
+        "accordion-summary": {
+          "top":          { "value": "0" },
+          "right":        { "value": "0" },
+          "bottom":       { "value": "2" },
+          "left":         { "value": "15" }
+        },
+        "checkbox": {
+          "top":        { "value": "2" },
+          "right":      { "value": "2" },
+          "bottom":     { "value": "2" },
+          "left":       { "value": "2" }
+        },
+        "radio": {
+          "top":        { "value": "2" },
+          "right":      { "value": "2" },
+          "bottom":     { "value": "2" },
+          "left":       { "value": "2" }
+        },
+        "tabs": {
+          "top":        { "value": "0" },
+          "right":      { "value": "0" },
+          "bottom":     { "value": "{size.base.gdm.sm.value}" },
+          "left":       { "value": "0" }
+        },
+        "tabs-tab": {
+          "top":        { "value": "0" },
+          "right":      { "value": "{size.base.gdm.md.value}" },
+          "bottom":     { "value": "0" },
+          "left":       { "value": "{size.base.gdm.md.value}" }
+        },
+        "embed-code-popup": {
+          "top":        { "value": "{size.base.gdm.md.value}" },
+          "right":      { "value": "0" },
+          "bottom":     { "value": "0" },
+          "left":       { "value": "0" }
+        }
+      }
+    }
+  }
+}

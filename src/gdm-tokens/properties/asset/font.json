@@ -1,0 +1,17 @@
+{
+  "asset": {
+    "font": {
+      "gdm": {
+        "Graphik-Regular-Web-EOT": { "value": "src/gdm-tokens/assets/fonts/Graphik-Regular-Web.eot" },
+        "Graphik-Regular-Web-WOFF": { "value": "src/gdm-tokens/assets/fonts/Graphik-Regular-Web.woff" },
+        "Graphik-Regular-Web-WOFF2": { "value": "src/gdm-tokens/assets/fonts/Graphik-Regular-Web.woff2" },
+        "Graphik-Medium-Web-EOT": { "value": "src/gdm-tokens/assets/fonts/Graphik-Medium-Web.eot" },
+        "Graphik-Medium-Web-WOFF": { "value": "src/gdm-tokens/assets/fonts/Graphik-Medium-Web.woff" },
+        "Graphik-Medium-Web-WOFF2": { "value": "src/gdm-tokens/assets/fonts/Graphik-Medium-Web.woff2" },
+        "Graphik-Bold-Web-EOT": { "value": "src/gdm-tokens/assets/fonts/Graphik-Bold-Web.eot" },
+        "Graphik-Bold-Web-WOFF": { "value": "src/gdm-tokens/assets/fonts/Graphik-Bold-Web.woff" },
+        "Graphik-Bold-Web-WOFF2": { "value": "src/gdm-tokens/assets/fonts/Graphik-Bold-Web.woff2" }
+      }
+    }
+  }
+}

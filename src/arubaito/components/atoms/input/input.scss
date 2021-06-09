@@ -1,0 +1,52 @@
+@import '@tokens/variables.scss';
+
+.input {
+  display: inline-block;
+  font-family: $TOKEN_FONT_FAMILY_INPUT_DEFAULT;
+  font-size: $TOKEN_SIZE_TEXT_INPUT_DEFAULT;
+  line-height: $TOKEN_SIZE_LINE_HEIGHT_INPUT_DEFAULT;
+  color: $TOKEN_COLOR_TEXT_INPUT_DEFAULT;
+  padding: $TOKEN_SIZE_PADDING_INPUT_LG_TOP $TOKEN_SIZE_PADDING_INPUT_LG_RIGHT $TOKEN_SIZE_PADDING_INPUT_LG_BOTTOM $TOKEN_SIZE_PADDING_INPUT_LG_LEFT;
+  width: 100%;
+  max-width: none;
+  background-color: $TOKEN_COLOR_BACKGROUND_INPUT_DEFAULT;
+  border: $TOKEN_SIZE_BORDER_INPUT solid $TOKEN_COLOR_BORDER_INPUT_DEFAULT;
+  border-radius: $TOKEN_SHAPE_BORDER_RADIUS_INPUT;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+
+  &.small {
+    padding: $TOKEN_SIZE_PADDING_INPUT_SM_TOP $TOKEN_SIZE_PADDING_INPUT_SM_RIGHT $TOKEN_SIZE_PADDING_INPUT_SM_BOTTOM $TOKEN_SIZE_PADDING_INPUT_SM_LEFT;
+  }
+
+  &:focus {
+    color: $TOKEN_COLOR_TEXT_INPUT_FOCUS;
+    border-color: $TOKEN_COLOR_BORDER_INPUT_FOCUS;
+    background-color: $TOKEN_COLOR_BACKGROUND_INPUT_FOCUS;
+  }
+
+  &.error {
+    color: $TOKEN_COLOR_TEXT_INPUT_ERROR;
+    border-color: $TOKEN_COLOR_BORDER_INPUT_ERROR;
+    background-color: $TOKEN_COLOR_BACKGROUND_INPUT_ERROR;
+  }
+
+  &.success {
+    color: $TOKEN_COLOR_TEXT_INPUT_SUCCESS;
+    border-color: $TOKEN_COLOR_BORDER_INPUT_SUCCESS;
+    background-color: $TOKEN_COLOR_BACKGROUND_INPUT_SUCCESS;
+  }
+
+  &.notification {
+    color: $TOKEN_COLOR_TEXT_INPUT_NOTIFICATION;
+    border-color: $TOKEN_COLOR_BORDER_INPUT_NOTIFICATION;
+    background-color: $TOKEN_COLOR_BACKGROUND_INPUT_NOTIFICATION;
+  }
+
+  &.disabled {
+    color: $TOKEN_COLOR_TEXT_INPUT_DISABLED;
+    background-color: $TOKEN_COLOR_BACKGROUND_INPUT_DISABLED;
+    border: $TOKEN_SIZE_BORDER_INPUT solid $TOKEN_COLOR_BORDER_INPUT_DISABLED;
+  }
+}

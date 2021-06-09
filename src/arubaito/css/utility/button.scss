@@ -1,0 +1,8 @@
+@import '@tokens/variables.scss';
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}btn-override {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}

@@ -1,0 +1,89 @@
+@import '@tokens/variables.scss';
+
+$baseWidth: 100 / $TOKEN_SIZE_WIDTH_GRID;
+
+// Examples:
+// .row .col.col-offset-1 {
+//   margin-left: 4.166667%;
+// }
+// .row .col.col-1 {
+//   flex: 0 0 4.166667%;
+//   max-width: 4.166667%;
+// }
+@for $i from 1 through $TOKEN_SIZE_WIDTH_GRID {
+  $percent: percentage($baseWidth * $i / 100);
+
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col.#{$TOKEN_PREFIX_BASE_DEFAULT}col-offset-#{$i} {
+    margin-left: $percent;
+  }
+
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col.#{$TOKEN_PREFIX_BASE_DEFAULT}col-#{$i} {
+    flex: 0 0 $percent;
+    max-width: $percent;
+  }
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}grid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 #{$TOKEN_SIZE_BASE_XS};
+  position: relative;
+  width: 100%;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -#{$TOKEN_SIZE_BASE_XS};
+  width: calc(100% + #{$TOKEN_SIZE_BASE_XS} * 2);
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 $TOKEN_SIZE_BASE_XS;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}no-p, .#{$TOKEN_PREFIX_BASE_DEFAULT}grid.#{$TOKEN_PREFIX_BASE_DEFAULT}no-p, .#{$TOKEN_PREFIX_BASE_DEFAULT}col.#{$TOKEN_PREFIX_BASE_DEFAULT}no-p {
+  padding: 0;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-wrap {
+  flex-wrap: wrap;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-top {
+  align-items: flex-start;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-bottom {
+  align-items: flex-end;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-center {
+  align-items: center;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-stretch {
+  align-items: stretch;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row.#{$TOKEN_PREFIX_BASE_DEFAULT}row-baseline {
+  align-items: baseline;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col .#{$TOKEN_PREFIX_BASE_DEFAULT}col-top {
+  align-self: flex-start;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col .#{$TOKEN_PREFIX_BASE_DEFAULT}col-bottom {
+  align-self: flex-end;
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}row .#{$TOKEN_PREFIX_BASE_DEFAULT}col .#{$TOKEN_PREFIX_BASE_DEFAULT}col-center {
+  -ms-grid-row-align: center;
+      align-self: center;
+}

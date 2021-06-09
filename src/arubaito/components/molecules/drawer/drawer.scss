@@ -1,0 +1,55 @@
+@import '@tokens/variables.scss';
+
+.drawer-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: $TOKEN_Z_INDEX_BASE_DRAWER;
+  overscroll-behavior: none;
+}
+
+.drawer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $TOKEN_COLOR_BACKGROUND_DRAWER;
+  color: $TOKEN_COLOR_TEXT_DRAWER;
+  z-index: $TOKEN_Z_INDEX_BASE_DROPDOWN;
+  pointer-events: all;
+  z-index: $TOKEN_Z_INDEX_BASE_DRAWER;
+};
+
+.drawer-inner-wraper {
+  position: relative;
+  margin: 0 auto;
+  max-width: $TOKEN_SIZE_WIDTH_CONTAINER;
+}
+
+.drawer-toggle {
+  position: absolute;
+  background-color: $TOKEN_COLOR_BACKGROUND_DRAWER;
+  height: $TOKEN_SIZE_HEIGHT_DRAWER_TOGGLE;
+  top: -$TOKEN_SIZE_HEIGHT_DRAWER_TOGGLE / 2;
+  padding: $TOKEN_SIZE_PADDING_DRAWER_TOGGLE_TOP $TOKEN_SIZE_PADDING_DRAWER_TOGGLE_RIGHT $TOKEN_SIZE_PADDING_DRAWER_TOGGLE_BOTTOM $TOKEN_SIZE_PADDING_DRAWER_TOGGLE_LEFT;
+  border-radius: $TOKEN_SHAPE_BORDER_RADIUS_DRAWER_TOGGLE;
+  margin-left: -$TOKEN_SIZE_PADDING_DRAWER_TOGGLE_LEFT;
+};
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  padding: $TOKEN_SIZE_PADDING_DRAWER_HEADER_TOP $TOKEN_SIZE_PADDING_DRAWER_HEADER_RIGHT $TOKEN_SIZE_PADDING_DRAWER_HEADER_BOTTOM $TOKEN_SIZE_PADDING_DRAWER_HEADER_LEFT;
+  &.clickable {
+    cursor: pointer;
+  };
+};
+
+.drawer-content {
+  padding: $TOKEN_SIZE_PADDING_DRAWER_CONTENT_TOP $TOKEN_SIZE_PADDING_DRAWER_CONTENT_RIGHT $TOKEN_SIZE_PADDING_DRAWER_CONTENT_BOTTOM $TOKEN_SIZE_PADDING_DRAWER_CONTENT_LEFT;
+};

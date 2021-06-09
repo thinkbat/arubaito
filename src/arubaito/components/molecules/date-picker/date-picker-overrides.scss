@@ -1,0 +1,150 @@
+@import '@tokens/variables.scss';
+
+.DateRangePicker_picker {
+  box-shadow: 1px 1px 6px 3px rgba(46,46,46,0.3);
+};
+
+.DateRangePicker, .DateInput_input {
+  font-family: $TOKEN_FONT_FAMILY_INPUT_DEFAULT;
+};
+
+.DateInput {
+  width: 100px;
+}
+
+.DateInput_input {
+  font-size: 14px;
+  font-weight: 600;
+  color: $TOKEN_COLOR_BASE_STEEL;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding: 6px 2px;
+  text-align: center;
+  margin: 0;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $TOKEN_COLOR_BASE_STEEL;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $TOKEN_COLOR_BASE_STEEL;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $TOKEN_COLOR_BASE_STEEL;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $TOKEN_COLOR_BASE_STEEL;
+  }
+  &__focused {
+    border-bottom: 4px solid $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+  }
+  &__disabled {
+    background: $TOKEN_COLOR_BASE_LIGHT;
+    font-style: normal;
+    color: $TOKEN_COLOR_BASE_RULES;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $TOKEN_COLOR_BASE_RULES;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $TOKEN_COLOR_BASE_RULES;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $TOKEN_COLOR_BASE_RULES;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $TOKEN_COLOR_BASE_RULES;
+    }
+  }
+};
+
+.DateRangePickerInput__disabled {
+  background: $TOKEN_COLOR_BASE_LIGHT;
+  .DateRangePickerInput_arrow_svg {
+    fill: $TOKEN_COLOR_BASE_RULES;
+  }
+};
+
+.DateInput_fang {
+  margin-top: 1px;
+};
+
+.DayPicker_weekHeader {
+  color: $TOKEN_COLOR_BASE_STEEL;  
+}
+
+.DateRangePickerInput_arrow_svg {
+  fill: $TOKEN_COLOR_BASE_BRAND_PRIMARY;
+}
+
+.CalendarMonth_caption {
+  color: $TOKEN_COLOR_BASE_BRAND_PRIMARY;
+  strong {
+    font-weight: normal;
+  }
+};
+
+.DayPickerNavigation_button__default {
+  border: 0;
+  padding: 4px 4px;
+  border-radius: 0;
+  svg {
+    fill: $TOKEN_COLOR_BASE_BRAND_PRIMARY;
+    height: 16px;
+    width: 16px;
+  }
+  &:hover, &:focus {
+    border: 0;
+    background-color: $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+    svg {
+      fill: $TOKEN_COLOR_BASE_LIGHT;
+    }
+   }
+};
+
+.DayPickerNavigation_button__disabled {
+  svg {
+    fill: $TOKEN_COLOR_BASE_RULES;
+  }
+  &:hover, &:focus {
+    background-color: $TOKEN_COLOR_BASE_LIGHT;
+    outline: 0;
+    svg {
+      fill: $TOKEN_COLOR_BASE_RULES;
+    }
+  }
+};
+
+.CalendarDay__default {
+  color: $TOKEN_COLOR_BASE_DARK;
+};
+
+.CalendarDay__blocked_out_of_range {
+  color: $TOKEN_COLOR_BASE_RULES;
+};
+
+.CalendarDay__selected {
+  background: $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+  border: 1px solid $TOKEN_COLOR_BASE_LIGHT;
+  color: $TOKEN_COLOR_BASE_LIGHT;
+  &:hover {
+    background: $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+    border: 1px solid $TOKEN_COLOR_BASE_LIGHT;
+  }
+};
+
+.CalendarDay__selected_span, .CalendarDay__hovered_span {
+  background: $TOKEN_COLOR_BASE_INTERACTIONS_SECONDARY;
+  border: 1px solid $TOKEN_COLOR_BASE_LIGHT;
+  color: $TOKEN_COLOR_BASE_LIGHT;
+  &:hover {
+    background: $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+    border: 1px solid $TOKEN_COLOR_BASE_LIGHT;
+    color: $TOKEN_COLOR_BASE_LIGHT;
+  }
+};
+
+.DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-right: 33px solid $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomLeft::before {
+  border-left: 33px solid $TOKEN_COLOR_BASE_INTERACTIONS_DEFAULT;
+}

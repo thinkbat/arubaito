@@ -1,0 +1,9 @@
+{
+  "prefix": {
+    "base": {
+      "gdm": {
+        "default": { "value": "gdm-" }
+      }
+    }
+  }
+}

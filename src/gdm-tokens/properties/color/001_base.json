@@ -1,0 +1,84 @@
+{
+  "color": {
+    "base": {
+      "gdm": {
+        "dark": {
+          "value": "#000000",
+          "description": "Dark content."
+        },
+        "light": {
+          "value": "#FFFFFF",
+          "description": "Light content."
+        },
+        "link": {
+          "value": "#0052D6",
+          "description": "Links, unless background doesn't allow blue or the link is inside a table."
+        },
+        "interactions": {
+          "default": {
+            "value": "#009DDB",
+            "description": "Interactions 100% opacity."
+          },
+          "secondary": {
+            "value": "#66C4E9",
+            "description": "Secondary interaction color"
+          },
+          "10": {
+            "value": "#009DDB",
+            "attributes": {
+              "opacity": "0.1",
+              "description": "Interactions 10% opacity."
+            }
+          },
+          "30": {
+            "value": "#009DDB",
+            "attributes": {
+              "opacity": "0.3",
+              "description": "Interactions 30% opacity."
+            }
+          }
+        },
+        "rules": {
+          "value": "#D3D3D3",
+          "description": "Rules."
+        },
+        "box": {
+          "value": "#F4F4F4",
+          "description": "Backgrounds which need to be highlighted."
+        },
+        "steel": {
+          "value": "#6F7878",
+          "description": "NOT SURE."
+        },
+        "brand": {
+          "primary": {
+            "value": "#002856",
+            "description": "Primary Brand Color."
+          },
+          "secondary": {
+            "value": "#FF540A",
+            "description": "Secondary Brand Color."
+          },
+          "tertiary": {
+            "value": "#FEC10D",
+            "description": "Tertiary Brand Color."
+          }
+        },
+        "alert": {
+          "error": {
+            "value": "#DE0A01",
+            "description": "Errors on forms etc."
+          },
+          "notification": {
+            "value": "#F5AB23",
+            "description": "Notification."
+          },
+          "success": {
+            "value": "#00A76D",
+            "description": "Success messaging."
+          }
+        }
+      }
+    }
+  }
+}

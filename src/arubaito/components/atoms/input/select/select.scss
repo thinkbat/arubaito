@@ -1,0 +1,31 @@
+@import '@tokens/variables.scss';
+
+.select {
+  position: relative;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: $TOKEN_SIZE_PADDING_SELECT_LG_TOP $TOKEN_SIZE_PADDING_SELECT_LG_RIGHT $TOKEN_SIZE_PADDING_SELECT_LG_BOTTOM $TOKEN_SIZE_PADDING_SELECT_LG_LEFT;
+
+  &.small {
+    padding: $TOKEN_SIZE_PADDING_SELECT_SM_TOP $TOKEN_SIZE_PADDING_SELECT_SM_RIGHT $TOKEN_SIZE_PADDING_SELECT_SM_BOTTOM $TOKEN_SIZE_PADDING_SELECT_SM_LEFT;
+  }
+
+  &select::-ms-expand {
+    display: none;
+  }
+}
+
+.select-caret {
+  position: absolute;
+  pointer-events: none;
+  right: $TOKEN_SIZE_BASE_MD;
+  width: 0;
+  height: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid $TOKEN_COLOR_BASE_DARK;
+}

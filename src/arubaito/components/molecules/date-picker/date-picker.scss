@@ -1,0 +1,17 @@
+@import '@tokens/variables.scss';
+
+.date-picker-presets-wrapper {
+  padding: 0px 22px $TOKEN_SIZE_BASE_SM 22px;
+};
+
+.date-picker-button {
+  width: auto;
+  outline: 0;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  &.active {
+    border: $TOKEN_SIZE_BORDER_BUTTON_SECONDARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_SECONDARY_HOVER;
+    background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_SECONDARY_HOVER;
+    color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_HOVER;
+  }
+}

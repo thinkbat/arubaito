@@ -1,0 +1,72 @@
+@import '@tokens/variables.scss';
+@import './font-styles.scss';
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: $TOKEN_COLOR_BASE_LIGHT;
+  white-space: nowrap;
+
+  &.#{$TOKEN_PREFIX_BASE_DEFAULT}table-fixed {
+    table-layout: fixed;
+  }
+
+  &.#{$TOKEN_PREFIX_BASE_DEFAULT}table-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.#{$TOKEN_PREFIX_BASE_DEFAULT}table-reset {
+    thead, tbody, tr { display: block; }
+    th, td { display: inline-block; }
+  }
+
+  th {
+    @extend .#{$TOKEN_PREFIX_BASE_DEFAULT}heading-sm;
+    vertical-align: bottom;
+    color: $TOKEN_COLOR_BASE_DARK;
+  }
+  tr {
+    @extend .#{$TOKEN_PREFIX_BASE_DEFAULT}paragraph-sm;
+  }
+
+  tr, th {
+    margin: 0;
+  }
+
+  td, th {
+    padding: $TOKEN_SIZE_BASE_SM;
+    border-bottom: $TOKEN_SIZE_BORDER_TABLE solid $TOKEN_COLOR_BORDER_TABLE;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:empty:not(.gdm-keep-border) {
+      border: $TOKEN_SIZE_BORDER_TABLE solid transparent;
+    }
+    &.#{$TOKEN_PREFIX_BASE_DEFAULT}allow-overflow {
+      overflow: visible;
+      text-overflow: initial;
+    }
+  }
+
+  th {
+    .#{$TOKEN_PREFIX_BASE_DEFAULT}icon {
+      display: block;
+      margin: 0 auto $TOKEN_SIZE_BASE_XXS;
+    }
+  }
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}table-inputs {
+  td, th {
+    padding: $TOKEN_SIZE_BASE_XS $TOKEN_SIZE_BASE_SM;
+  }
+}
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}table-alternating {
+  tr {
+    border-bottom: 0;
+    &:nth-of-type(even) {
+      background-color: $TOKEN_COLOR_BASE_INTERACTIONS_10;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: Build styleguide
+
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+      - run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > ~/.npmrc
+          ls ~/.npmrc
+          git checkout -b gh-pages
+          npm install
+          npm run build:guide
+          rm -Rf src scripts node_modules README.md *.js *.json
+          mv -i styleguide docs
+          git add .
+          git config --global user.email "github@capterra.com"
+          git config --global user.name "GitHub Action"
+          git commit -m "Generating styleguide"
+          git push -f origin gh-pages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,32 @@
+{
+  "size": {
+    "border": {
+      "gdm": {
+        "button": {
+          "primary": {
+            "default":      { "value": "2" },
+            "disabled":     { "value": "2" }
+          },
+          "secondary": {
+            "default":      { "value": "2" },
+            "disabled":     { "value": "2" }
+          },
+          "tertiary": {
+            "default":      { "value": "2" },
+            "disabled":     { "value": "2" }
+          }
+        },
+        "input":            { "value": "2" },
+        "flash":            { "value": "6" },
+        "tooltip":          { "value": "1" },
+        "table":            { "value": "1"},
+        "nav-item":         { "value": "2"},
+        "accordion-title":  { "value": "1" },
+        "checkbox":         { "value": "1" },
+        "radio":            { "value": "1" },
+        "tabs-tab":         { "value": "3" },
+        "step-icon":        { "value": "2" }
+      }
+    }
+  }
+}

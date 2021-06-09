@@ -1,0 +1,24 @@
+@import '@tokens/variables.scss';
+@import '../_functions.scss';
+
+// This will iterate over all the color base tokens to create css classnames
+// All tokens for font styles can be found in the token library under color/base.json
+// example output: .c-brand-primary, .c-steel, .c-interaction-10 etc.
+$color: map-deep-get($gdm-tokens, 'color', 'base', 'gdm');
+
+body {
+  @each $name, $value in $color {
+    @if type-of($value) == 'map' {
+      $sub-map: map-deep-get($color, $name);
+      @each $name_2, $value_2 in $sub-map {
+        .#{$TOKEN_PREFIX_BASE_DEFAULT}color-#{$name}-#{$name_2} {
+          color: $value_2;
+        }
+      }
+    } @else {
+      .#{$TOKEN_PREFIX_BASE_DEFAULT}color-#{$name} {
+        color: $value;
+      }
+    }
+  }
+};

@@ -1,0 +1,54 @@
+@import '@tokens/variables.scss';
+
+.info-wrapper {
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: $TOKEN_SIZE_BASE_XS;
+}
+
+.tabs {
+  display: inline-block;
+  margin: $TOKEN_SIZE_MARGIN_TABS_TOP $TOKEN_SIZE_MARGIN_TABS_RIGHT $TOKEN_SIZE_MARGIN_TABS_BOTTOM $TOKEN_SIZE_MARGIN_TABS_LEFT;
+ }
+
+.tab {
+  display: inline-block;
+  margin: $TOKEN_SIZE_MARGIN_TABS_TAB_TOP $TOKEN_SIZE_MARGIN_TABS_TAB_RIGHT $TOKEN_SIZE_MARGIN_TABS_TAB_BOTTOM $TOKEN_SIZE_MARGIN_TABS_TAB_LEFT;
+  padding: $TOKEN_SIZE_PADDING_TABS_TAB_TOP $TOKEN_SIZE_PADDING_TABS_TAB_RIGHT $TOKEN_SIZE_PADDING_TABS_TAB_BOTTOM $TOKEN_SIZE_PADDING_TABS_TAB_LEFT;
+  border-bottom: $TOKEN_SIZE_BORDER_TABS_TAB solid $TOKEN_COLOR_BORDER_TABS_TAB_DEFAULT;
+  transition: border-bottom $TOKEN_DURATION_BASE_FAST, color $TOKEN_DURATION_BASE_FAST;
+  color: $TOKEN_COLOR_TEXT_TABS_TAB_DEFAULT;
+
+  &:hover, &:focus, &.active, &:active {
+    border-bottom: $TOKEN_SIZE_BORDER_TABS_TAB solid $TOKEN_COLOR_BORDER_TABS_TAB_HOVER;
+    color: $TOKEN_COLOR_TEXT_TABS_TAB_ACTIVE;
+  }
+  &:disabled, .disabled {
+    color: $TOKEN_COLOR_TEXT_TABS_TAB_DISABLED;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+ }
+
+.panel {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

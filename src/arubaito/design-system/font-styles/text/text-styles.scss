@@ -1,0 +1,32 @@
+@import '@tokens/variables.scss';
+
+.text-style-wrapper {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid $TOKEN_COLOR_BASE_DARK;
+  padding-left: $TOKEN_SIZE_BASE_XS;
+  padding-right: $TOKEN_SIZE_BASE_XS;
+}
+
+.class-box {
+  position: absolute;
+  display: block;
+  right: $TOKEN_SIZE_BASE_XS;
+  top: 0;
+  padding: 6px 10px;
+  margin-top: 4px;
+  background: $TOKEN_COLOR_BASE_BOX;
+  border: 1px solid $TOKEN_COLOR_BASE_STEEL;
+}
+
+.copy-inner-wrapper {
+  display: inline-block;
+  line-height: 0;
+  background-color: $TOKEN_COLOR_BASE_BOX;
+  &.dark {
+    background-color: $TOKEN_COLOR_BASE_DARK;
+  }
+  span {
+    display: inline-block;
+  }
+}

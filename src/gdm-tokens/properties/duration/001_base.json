@@ -1,0 +1,20 @@
+{
+  "duration": {
+    "base": {
+      "gdm": {
+        "slow": {
+          "value": "960ms"
+        },
+        "moderate": {
+          "value": "480ms"
+        },
+        "fast": {
+          "value": "240ms"
+        },
+        "immediate": {
+          "value": "120ms"
+        }
+      }
+    }
+  }
+}

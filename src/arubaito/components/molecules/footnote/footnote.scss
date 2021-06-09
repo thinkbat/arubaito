@@ -1,0 +1,7 @@
+@import '@tokens/variables.scss';
+
+.footnote {
+  position: relative;
+  display: inline-block;
+  padding: $TOKEN_SIZE_PADDING_FOOTNOTE_TOP $TOKEN_SIZE_PADDING_FOOTNOTE_RIGHT $TOKEN_SIZE_PADDING_FOOTNOTE_BOTTOM $TOKEN_SIZE_PADDING_FOOTNOTE_LEFT;
+}

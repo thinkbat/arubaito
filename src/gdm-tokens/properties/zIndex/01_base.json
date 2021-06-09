@@ -1,0 +1,32 @@
+{
+  "zIndex": {
+    "base": {
+      "gdm": {
+        "deep": {
+          "value": "-999"
+        },
+        "default": {
+          "value": "1"
+        },
+        "dialog": {
+          "value": "100"
+        },
+        "dropdown": {
+          "value": "700"
+        },
+        "overlay": {
+          "value": "800"
+        },
+        "drawer": {
+          "value": "850"
+        },
+        "modal": {
+          "value": "900"
+        },
+        "toast": {
+          "value": "1000"
+        }
+      }
+    }
+  }
+}

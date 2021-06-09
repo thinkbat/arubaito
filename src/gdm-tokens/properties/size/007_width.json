@@ -1,0 +1,32 @@
+{
+  "size": {
+    "width": {
+      "gdm": {
+        "container":          { "value": "1200" },
+        "icons": {
+          "xs":               { "value": "12" },
+          "sm":               { "value": "16" },
+          "md":               { "value": "24" },
+          "lg":               { "value": "32" }
+        },
+        "grid": {
+          "value": "24",
+          "attributes": {
+            "nopx": "true"
+          }
+        },
+        "dropdown":           { "value": "320" },
+        "modal": {
+          "small":            { "value": "400"  },
+          "medium":           { "value": "500"  },
+          "large":            { "value": "866"  }
+        },
+        "checkbox":           { "value": "28" },
+        "radio":              { "value": "28" },
+        "multi-select":       { "value": "{size.width.gdm.dropdown.value}" },
+        "embed-code-popup":   { "value": "320" },
+        "step-icon":          { "value": "{size.width.gdm.icons.sm.value}" }
+      }
+    }
+  }
+}

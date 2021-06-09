@@ -1,0 +1,15 @@
+{
+  "shape": {
+    "borderRadius": {
+      "gdm": {
+        "base":           { "value": "0" },
+        "button":         { "value": "0" },
+        "input":          { "value": "0" },
+        "tooltip":        { "value": "4px" },
+        "drawer-toggle":  { "value": "3px" },
+        "radio":          { "value": "100%" },
+        "step-icon":      { "value": "50%" }
+      }
+    }
+  }
+}

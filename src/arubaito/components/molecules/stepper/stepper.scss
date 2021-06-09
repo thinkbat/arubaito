@@ -1,0 +1,74 @@
+@import '@tokens/variables.scss';
+@import '../../../css/utility/font-styles.scss';
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .complete-label {
+    margin: 0;
+    padding-bottom: $TOKEN_SIZE_PADDING_STEP_LABEL_TOP_BOTTOM;
+  }  
+}
+
+.stepper {
+  display: flex;
+  align-items: stretch;
+}
+
+.step-container {
+  flex: 1;
+  position: relative;
+}
+
+.step-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .step-label-top {
+    margin: 0;
+    text-align: center;
+    padding-bottom: $TOKEN_SIZE_PADDING_STEP_LABEL_TOP_BOTTOM;
+  }
+
+  .step-label-bottom {
+    margin: 0;
+    text-align: center;
+    padding-top: $TOKEN_SIZE_PADDING_STEP_LABEL_BOTTOM_TOP;
+  }
+}
+
+.step-icon {
+  display: inline-block;
+  z-index: 1;
+  height: $TOKEN_SIZE_HEIGHT_STEP_ICON;
+  width: $TOKEN_SIZE_WIDTH_STEP_ICON;
+  border-radius: $TOKEN_SHAPE_BORDER_RADIUS_STEP_ICON;
+  
+  &.active {
+    border: $TOKEN_SIZE_BORDER_STEP_ICON solid $TOKEN_COLOR_BORDER_STEP_ICON_ACTIVE;
+    background-color: $TOKEN_COLOR_BACKGROUND_STEP_ICON_ACTIVE;
+  }
+  &.complete {
+    background-color: $TOKEN_COLOR_BACKGROUND_STEP_ICON_COMPLETE;
+  }
+  &.incomplete {
+    background-color: $TOKEN_COLOR_BACKGROUND_STEP_ICON_INCOMPLETE;
+  }
+}
+
+.step-connector {
+  height: $TOKEN_SIZE_HEIGHT_STEP_CONNECTOR;
+  position: absolute;
+  left: 50%;
+  background-color: $TOKEN_COLOR_BACKGROUND_STEP_CONNECTOR_INACTIVE;
+
+  .progress-bar {
+    height: inherit;
+    width: inherit;
+    position: inherit;
+    background-color: $TOKEN_COLOR_BACKGROUND_STEP_CONNECTOR_ACTIVE;
+  }
+}

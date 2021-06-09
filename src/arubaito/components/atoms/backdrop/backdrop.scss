@@ -1,0 +1,11 @@
+@import '@tokens/variables.scss';
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $TOKEN_Z_INDEX_BASE_OVERLAY;
+  background-color: $TOKEN_COLOR_BACKGROUND_BACKDROP;
+}

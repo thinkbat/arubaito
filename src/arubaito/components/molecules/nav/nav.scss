@@ -1,0 +1,95 @@
+@import '@tokens/variables.scss';
+@import '../../../css/utility/font-styles.scss';
+
+.nav {
+  display: block;
+  background-color: $TOKEN_COLOR_BACKGROUND_NAV;
+  .disabled {
+    pointer-events: none;
+    color: $TOKEN_COLOR_TEXT_NAV_ITEM_DISABLED;
+  }
+  
+  .active {
+    border-right: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+    border-left: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+    color: $TOKEN_COLOR_TEXT_NAV_ITEM_HOVER;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    line-height: 1.7em;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.item {
+  display: inline-block;
+  font-family: $TOKEN_FONT_FAMILY_NAV_ITEM;
+  font-size: $TOKEN_SIZE_TEXT_NAV_ITEM;
+  line-height: $TOKEN_SIZE_LINE_HEIGHT_NAV_ITEM;
+  font-style: $TOKEN_FONT_STYLE_NAV_ITEM;
+  font-weight: $TOKEN_FONT_WEIGHT_NAV_ITEM;
+  color: $TOKEN_COLOR_TEXT_NAV_ITEM_DEFAULT;
+  margin: $TOKEN_SIZE_MARGIN_NAV_ITEM_TOP $TOKEN_SIZE_MARGIN_NAV_ITEM_RIGHT;
+  border-right: $TOKEN_SIZE_BORDER_NAV_ITEM solid transparent;
+  border-left: $TOKEN_SIZE_BORDER_NAV_ITEM solid transparent;
+  background-color: $TOKEN_COLOR_BACKGROUND_NAV_ITEM;
+  list-style-type: none;
+  
+  &:hover {
+    border-right: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+    border-left: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+    color: $TOKEN_COLOR_TEXT_NAV_ITEM_HOVER;
+
+    .dropdown {
+      display: block;
+    }
+  }
+
+  a {
+    padding: $TOKEN_SIZE_PADDING_NAV_ITEM_TOP $TOKEN_SIZE_PADDING_NAV_ITEM_RIGHT $TOKEN_SIZE_PADDING_NAV_ITEM_BOTTOM $TOKEN_SIZE_PADDING_NAV_ITEM_LEFT;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  padding-top: 10px;
+}
+
+.dropdown-list {
+  cursor: auto;
+  padding: $TOKEN_SIZE_PADDING_NAV_DROPDOWN_TOP $TOKEN_SIZE_PADDING_NAV_DROPDOWN_RIGHT $TOKEN_SIZE_PADDING_NAV_DROPDOWN_BOTTOM $TOKEN_SIZE_PADDING_NAV_DROPDOWN_LEFT;
+  margin-left: -$TOKEN_SIZE_PADDING_NAV_ITEM_LEFT;
+  background-color: $TOKEN_COLOR_BACKGROUND_NAV_DROPDOWN;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.subitem {
+  display: block;
+  font-family: $TOKEN_FONT_FAMILY_NAV_ITEM;
+  font-size: $TOKEN_SIZE_TEXT_NAV_ITEM;
+  line-height: $TOKEN_SIZE_LINE_HEIGHT_NAV_ITEM;
+  font-style: $TOKEN_FONT_STYLE_NAV_ITEM;
+  font-weight: $TOKEN_FONT_WEIGHT_NAV_ITEM;
+  color: $TOKEN_COLOR_TEXT_NAV_ITEM_DEFAULT;
+  text-decoration: none;
+  margin: $TOKEN_SIZE_MARGIN_NAV_DROPDOWN_TOP $TOKEN_SIZE_MARGIN_NAV_DROPDOWN_RIGHT $TOKEN_SIZE_MARGIN_NAV_DROPDOWN_BOTTOM $TOKEN_SIZE_MARGIN_NAV_DROPDOWN_LEFT;
+  border-right: $TOKEN_SIZE_BORDER_NAV_ITEM solid transparent;
+  border-left: $TOKEN_SIZE_BORDER_NAV_ITEM solid transparent;
+  &:hover {
+    border-right: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+    border-left: $TOKEN_SIZE_BORDER_NAV_ITEM solid $TOKEN_COLOR_BORDER_NAV_ITEM_HOVER;
+  }
+  
+  a {
+    padding: $TOKEN_SIZE_PADDING_NAV_SUB_ITEM_TOP $TOKEN_SIZE_PADDING_NAV_SUB_ITEM_RIGHT $TOKEN_SIZE_PADDING_NAV_SUB_ITEM_BOTTOM $TOKEN_SIZE_PADDING_NAV_SUB_ITEM_LEFT;
+  }
+}

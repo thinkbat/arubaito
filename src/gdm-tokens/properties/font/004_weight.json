@@ -1,0 +1,36 @@
+{
+  "font": {
+    "weight": {
+      "gdm": {
+        "default":            { "value": "500" },
+        "title":              { "value": "700" },
+        "subtitle":           { "value": "700" },
+        "alert":              { "value": "600" },
+        "label":              { "value": "600" },
+        "link": {
+          "default":          { "value": "500"},
+          "dark":             { "value": "500"},
+          "light":            { "value": "500"}
+        },
+        "heading": {
+          "sm":               { "value": "600" },
+          "lg":               { "value": "600" }
+        },
+        "paragraph": {
+          "sm":               { "value": "500" },
+          "lg":               { "value": "500" }
+        },
+        "notification": {
+          "sm":               { "value": "500" },
+          "lg":               { "value": "500" }
+        },
+        "button": {
+          "sm":               { "value": "700" },
+          "lg":               { "value": "700" }
+        },
+        "nav-item":           { "value": "400" },
+        "dropdown-list-item": { "value": "500" }
+      }
+    }
+  }
+}

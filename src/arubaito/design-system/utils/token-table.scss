@@ -1,0 +1,27 @@
+@import '@tokens/variables.scss';
+
+.token-table {
+  width: 100%;
+  border-spacing: 0;
+  border-bottom: 1px solid $TOKEN_COLOR_BASE_RULES;
+  margin-bottom: $TOKEN_SIZE_BASE_XXL;
+  th {
+    padding: 0 0 0 $TOKEN_SIZE_BASE_XS;
+    text-align: left;
+    &:last-of-type {
+      text-align: right;
+      padding: 0 $TOKEN_SIZE_BASE_XS 0 0;
+    }
+  }
+  td {
+    &:first-of-type {
+      padding: $TOKEN_SIZE_BASE_LG 0 $TOKEN_SIZE_BASE_LG $TOKEN_SIZE_BASE_XS;
+    }
+    &:last-of-type {
+      width: 100%;
+      text-align: right;
+      padding: $TOKEN_SIZE_BASE_LG $TOKEN_SIZE_BASE_XS $TOKEN_SIZE_BASE_LG 0;
+    }
+    border-top: 1px solid $TOKEN_COLOR_BASE_RULES;
+  }
+}

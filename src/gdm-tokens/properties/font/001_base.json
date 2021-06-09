@@ -1,0 +1,10 @@
+{
+  "font": {
+    "base": {
+      "gdm": {
+        "default": { "value": "Graphik, sans-serif" },
+        "nav-item": { "value": "Graphik" }
+      }
+    }
+  }
+}

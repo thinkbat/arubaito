@@ -1,0 +1,123 @@
+@import '@tokens/variables.scss';
+
+.button {
+  display: inline-block;
+  font-family: $TOKEN_FONT_FAMILY_BUTTON_DEFAULT;
+  font-weight: $TOKEN_FONT_WEIGHT_BUTTON_LG;
+  border-radius: $TOKEN_SHAPE_BORDER_RADIUS_BUTTON;
+  font-size: $TOKEN_SIZE_TEXT_BUTTON_LG;
+  padding: $TOKEN_SIZE_PADDING_BUTTON_LG;
+  width: 216px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    border: $TOKEN_SIZE_BORDER_BUTTON_PRIMARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_PRIMARY_DEFAULT;
+    background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_PRIMARY_DEFAULT;
+    color: $TOKEN_COLOR_TEXT_BUTTON_PRIMARY_DEFAULT;
+    &:hover {
+      border: $TOKEN_SIZE_BORDER_BUTTON_PRIMARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_PRIMARY_HOVER;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_PRIMARY_HOVER;
+      color: $TOKEN_COLOR_TEXT_BUTTON_PRIMARY_HOVER;
+    }
+    &:active {
+      border: $TOKEN_SIZE_BORDER_BUTTON_PRIMARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_PRIMARY_ACTIVE;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_PRIMARY_ACTIVE;
+      color: $TOKEN_COLOR_TEXT_BUTTON_PRIMARY_ACTIVE;
+    }
+    &.disabled {
+      cursor: auto;
+      border: $TOKEN_SIZE_BORDER_BUTTON_PRIMARY_DISABLED solid $TOKEN_COLOR_BORDER_BUTTON_PRIMARY_DISABLED;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_PRIMARY_DISABLED;
+      color: $TOKEN_COLOR_TEXT_BUTTON_PRIMARY_DISABLED;
+      font-size: $TOKEN_SIZE_TEXT_BUTTON_LG;
+      padding: $TOKEN_SIZE_PADDING_BUTTON_LG;
+      min-width: unset;
+    }
+  }
+
+  &.secondary {
+    border: $TOKEN_SIZE_BORDER_BUTTON_SECONDARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_SECONDARY_DEFAULT;
+    background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_SECONDARY_DEFAULT;
+    color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_DEFAULT;
+    &:hover {
+      border: $TOKEN_SIZE_BORDER_BUTTON_SECONDARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_SECONDARY_HOVER;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_SECONDARY_HOVER;
+      color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_HOVER;
+      span, i {
+        color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_HOVER;
+      }
+    }
+    &:active {
+      border: $TOKEN_SIZE_BORDER_BUTTON_SECONDARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_SECONDARY_ACTIVE;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_SECONDARY_ACTIVE;
+      color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_ACTIVE;
+    }
+    &.disabled {
+      cursor: auto;
+      border: $TOKEN_SIZE_BORDER_BUTTON_SECONDARY_DISABLED solid $TOKEN_COLOR_BORDER_BUTTON_SECONDARY_DISABLED;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_SECONDARY_DISABLED;
+      color: $TOKEN_COLOR_TEXT_BUTTON_SECONDARY_DISABLED;
+      font-size: $TOKEN_SIZE_TEXT_BUTTON_LG;
+      padding: $TOKEN_SIZE_PADDING_BUTTON_LG;
+      min-width: unset;
+    }
+  }
+
+  &.tertiary {
+    width: auto;
+    border: $TOKEN_SIZE_BORDER_BUTTON_TERTIARY_DEFAULT solid $TOKEN_COLOR_BORDER_BUTTON_TERTIARY_DEFAULT;
+    background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_TERTIARY_DEFAULT;
+    color: $TOKEN_COLOR_TEXT_BUTTON_TERTIARY_DEFAULT;
+    text-decoration: underline;
+    &:hover {
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_TERTIARY_HOVER;
+      color: $TOKEN_COLOR_TEXT_BUTTON_TERTIARY_HOVER;
+    }
+    &:active {
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_TERTIARY_ACTIVE;
+      color: $TOKEN_COLOR_TEXT_BUTTON_TERTIARY_ACTIVE;
+    }
+    &.disabled {
+      cursor: auto;
+      border: $TOKEN_SIZE_BORDER_BUTTON_TERTIARY_DISABLED solid $TOKEN_COLOR_BORDER_BUTTON_TERTIARY_DISABLED;
+      background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_TERTIARY_DISABLED;
+      color: $TOKEN_COLOR_TEXT_BUTTON_TERTIARY_DISABLED;
+      font-size: $TOKEN_SIZE_TEXT_BUTTON_LG;
+      padding: $TOKEN_SIZE_PADDING_BUTTON_LG;
+      min-width: unset;
+    }
+  }
+
+  &.small {
+    font-size: $TOKEN_SIZE_TEXT_BUTTON_SM;
+    font-weight: $TOKEN_FONT_WEIGHT_BUTTON_SM;
+    padding: $TOKEN_SIZE_PADDING_BUTTON_SM;
+    &.disabled {
+      font-size: $TOKEN_SIZE_TEXT_BUTTON_SM;
+      font-weight: $TOKEN_FONT_WEIGHT_BUTTON_SM;
+      padding: $TOKEN_SIZE_PADDING_BUTTON_SM;
+    }
+  }
+
+  &.quarternary {
+    cursor: pointer;
+    text-decoration: underline;
+    width: auto;
+    padding: 0;
+    font-size: $TOKEN_SIZE_TEXT_BUTTON_SM;
+    font-weight: $TOKEN_FONT_WEIGHT_DEFAULT;
+    border: $TOKEN_COLOR_BORDER_BUTTON_QUARTERNARY_DEFAULT;
+    color: $TOKEN_COLOR_TEXT_BUTTON_QUARTERNARY_DEFAULT;
+    background-color: $TOKEN_COLOR_BACKGROUND_BUTTON_QUARTERNARY_DEFAULT;
+    &.disabled {
+      cursor: auto;
+      color: $TOKEN_COLOR_TEXT_BUTTON_TERTIARY_DISABLED;
+    }
+  }
+}

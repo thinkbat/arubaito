@@ -1,0 +1,63 @@
+{
+  "color": {
+    "border": {
+      "gdm": {
+        "icon": {
+          "error":        { "value": "{color.base.gdm.alert.error.value}" },
+          "notification": { "value": "{color.base.gdm.alert.notification.value}" },
+          "success":      { "value": "{color.base.gdm.alert.success.value}" }
+        },
+        "button": {
+          "primary": {
+            "default":    { "value": "{color.base.gdm.brand.secondary.value}" },
+            "hover":      { "value": "#D1460B" },
+            "active":     { "value": "#B03602" },
+            "disabled":   { "value": "{color.base.gdm.rules.value}" }
+          },
+          "secondary": {
+            "default":    { "value": "{color.base.gdm.brand.primary.value}" },
+            "hover":      { "value": "{color.base.gdm.brand.primary.value}" },
+            "active":     { "value": "{color.base.gdm.brand.primary.value}" },
+            "disabled":   { "value": "{color.base.gdm.rules.value}" }
+          },
+          "tertiary": {
+            "default":    { "value": "{color.base.gdm.light.value}" },
+            "hover":      { "value": "{color.base.gdm.light.value}" },
+            "active":     { "value": "{color.base.gdm.light.value}" },
+            "disabled":   { "value": "{color.base.gdm.light.value}" }
+          },
+          "quarternary": {
+            "default":    { "value": "transparent" }
+          }
+        },
+        "input": {
+          "default":      { "value": "{color.base.gdm.steel.value}" },
+          "error":        { "value": "{color.base.gdm.alert.error.value}" },
+          "success":      { "value": "{color.base.gdm.alert.success.value}" },
+          "notification": { "value": "{color.base.gdm.alert.notification.value}" },
+          "focus":        { "value": "{color.base.gdm.interactions.default.value}" },
+          "disabled":     { "value": "{color.base.gdm.rules.value}" }
+        },
+        "flash": {
+          "error":        { "value": "{color.base.gdm.alert.error.value}" },
+          "notification": { "value": "{color.base.gdm.alert.notification.value}" },
+          "success":      { "value": "{color.base.gdm.alert.success.value}" }
+        },
+        "tooltip":        { "value": "{color.base.gdm.interactions.default.value}" },
+        "table":          { "value": "{color.base.gdm.rules.value}" },
+        "nav-item": {
+          "default":      { "value": "transparent" },
+          "hover":        { "value": "{color.base.gdm.brand.secondary.value}" }
+        },
+        "accordion-title":{ "value": "#808080" },
+        "tabs-tab":       {
+          "default":    { "value": "transparent" },
+          "hover":      { "value": "{color.base.gdm.brand.primary.value}" }
+        },
+        "step-icon": { 
+          "active": { "value": "{color.base.gdm.brand.secondary.value}" }
+        }  
+      }
+    }
+  }
+}

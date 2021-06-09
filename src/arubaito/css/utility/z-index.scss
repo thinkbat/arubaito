@@ -1,0 +1,13 @@
+@import '@tokens/variables.scss';
+
+// This will iterate over all the z-index base tokens to create css classnames
+// example output: .z-index-deep, .z-index-default, .z-index-dialog, .heading-lg etc.
+$zIndez: map-deep-get($gdm-tokens, 'zIndex', 'base', 'gdm');
+
+body {
+  @each $name, $value in $zIndez {
+    .#{$TOKEN_PREFIX_BASE_DEFAULT}z-index-#{$name} {
+      z-index: $value;
+    }
+  };
+}

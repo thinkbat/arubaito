@@ -1,0 +1,106 @@
+@import '@tokens/variables.scss';
+
+.tooltip {
+  background-color: $TOKEN_COLOR_BACKGROUND_TOOLTIP;
+  border: $TOKEN_SIZE_BORDER_TOOLTIP solid $TOKEN_COLOR_BORDER_TOOLTIP;
+  border-radius: $TOKEN_SHAPE_BORDER_RADIUS_TOOLTIP;
+  padding: $TOKEN_SIZE_PADDING_TOOLTIP_TOP $TOKEN_SIZE_PADDING_TOOLTIP_RIGHT $TOKEN_SIZE_PADDING_TOOLTIP_BOTTOM $TOKEN_SIZE_PADDING_TOOLTIP_LEFT;
+  margin: $TOKEN_SIZE_MARGIN_TOOLTIP_TOP $TOKEN_SIZE_MARGIN_TOOLTIP_RIGHT $TOKEN_SIZE_MARGIN_TOOLTIP_BOTTOM $TOKEN_SIZE_MARGIN_TOOLTIP_LEFT;
+  max-width: 320px;
+  min-width: 200px;
+  height: auto;
+}
+
+.tooltipArrow {
+  position: absolute;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+  }
+}
+
+.tooltip[data-placement="top"] > .tooltipArrow {
+  bottom: -11px;
+  width: 20px;
+  height: 10px;
+
+  &:before {
+    bottom: 0px;
+    left: 0px;
+    border-width: 10px 10px 0 10px;
+    border-top-color: $TOKEN_COLOR_BORDER_TOOLTIP;
+  }
+
+  &:after {
+    top: -1px;
+    left: 0px;
+    border-width: 10px 10px 0 10px;
+    border-top-color: $TOKEN_COLOR_BASE_LIGHT;
+  }
+}
+
+.tooltip[data-placement="bottom"] > .tooltipArrow {
+  top: -11px;
+  width: 20px;
+  height: 10px;
+
+  &:before {
+    bottom: 0px;
+    left: 0px;
+    border-width: 0px 10px 10px 10px;
+    border-bottom-color: $TOKEN_COLOR_BORDER_TOOLTIP;
+  }
+
+  &:after {
+    bottom: -1px;
+    left: 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px 10px 10px 10px;
+    border-bottom-color: $TOKEN_COLOR_BASE_LIGHT;
+  }
+}
+
+.tooltip[data-placement="left"] > .tooltipArrow {
+  right: -11px;
+  width: 10px;
+  height: 20px;
+
+  &:before {
+    top: 0px;
+    left: 0px;
+    border-width: 10px 0px 10px 10px;
+    border-left-color: $TOKEN_COLOR_BORDER_TOOLTIP;
+  }
+
+  &:after {
+    top: 0px;
+    left: -1px;
+    border-width: 10px 0px 10px 10px;
+    border-left-color: $TOKEN_COLOR_BASE_LIGHT;
+  }
+}
+
+.tooltip[data-placement="right"] > .tooltipArrow {
+  left: -11px;
+  width: 10px;
+  height: 20px;
+
+  &:before {
+    top: 0px;
+    right: 0px;
+    border-width: 10px 10px 10px 0px;
+    border-right-color: $TOKEN_COLOR_BORDER_TOOLTIP;
+  }
+
+  &:after {
+    top: 0px;
+    right: -1px;
+    border-width: 10px 10px 10px 0px;
+    border-right-color: $TOKEN_COLOR_BASE_LIGHT;
+  }
+}

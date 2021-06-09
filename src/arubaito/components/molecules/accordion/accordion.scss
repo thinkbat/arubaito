@@ -1,0 +1,61 @@
+
+@import '@tokens/variables.scss';
+
+.accordion {
+  &.open {
+    .accordion-content {
+      height: auto;
+    }
+    .accordion-icon {
+      transform: rotate(180deg);
+    }
+  }
+  &.table {
+    .accordion-content {
+      top: -6px;
+    }
+    .accordion-header {
+      padding: $TOKEN_SIZE_BASE_SM 0;
+    }
+    .accordion-summary {
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.caret-btn {
+  font-size: 0;
+  padding: 4px;
+}
+
+.accordion-header {
+  position: relative;
+  font-size: 0;
+  margin: $TOKEN_SIZE_MARGIN_ACCORDION_TITLE_TOP $TOKEN_SIZE_MARGIN_ACCORDION_TITLE_RIGHT $TOKEN_SIZE_MARGIN_ACCORDION_TITLE_BOTTOM $TOKEN_SIZE_MARGIN_ACCORDION_TITLE_LEFT;
+  padding: $TOKEN_SIZE_PADDING_ACCORDION_TITLE_TOP $TOKEN_SIZE_PADDING_ACCORDION_TITLE_RIGHT $TOKEN_SIZE_PADDING_ACCORDION_TITLE_BOTTOM $TOKEN_SIZE_PADDING_ACCORDION_TITLE_LEFT;
+  border-top: $TOKEN_SIZE_BORDER_ACCORDION_TITLE solid $TOKEN_COLOR_BORDER_ACCORDION_TITLE;
+}
+
+.accordion-summary {
+  display: inline-block;
+  margin: $TOKEN_SIZE_MARGIN_ACCORDION_SUMMARY_TOP $TOKEN_SIZE_MARGIN_ACCORDION_SUMMARY_RIGHT $TOKEN_SIZE_MARGIN_ACCORDION_SUMMARY_BOTTOM $TOKEN_SIZE_MARGIN_ACCORDION_SUMMARY_LEFT;
+  color: $TOKEN_COLOR_TEXT_ACCORDION_SUMMARY;
+  vertical-align: bottom;
+}
+
+.accordion-icon {
+  margin: 0 4px 0 2px;
+}
+
+.accordion-icon-hide {
+  visibility: hidden;
+}
+
+.accordion-content {
+  position: relative;
+  top: -1em;
+  padding: $TOKEN_SIZE_PADDING_ACCORDION_CONTENT_TOP $TOKEN_SIZE_PADDING_ACCORDION_CONTENT_RIGHT $TOKEN_SIZE_PADDING_ACCORDION_CONTENT_BOTTOM $TOKEN_SIZE_PADDING_ACCORDION_CONTENT_LEFT ;
+  height: 0;
+  font-family: $TOKEN_FONT_FAMILY_ACCORDION_CONTENT;
+}

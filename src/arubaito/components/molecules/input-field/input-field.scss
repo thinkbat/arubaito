@@ -1,0 +1,29 @@
+@import '@tokens/variables.scss';
+
+.input-field-wrapper {
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  box-sizing: border-box;
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+}
+
+body {
+  .input-alert {
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    &.inline {
+      right: -$TOKEN_SIZE_BASE_XS;
+      bottom: auto;
+      top: 50%;
+      transform: translate(100%, -50%);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@import '@tokens/variables.scss';
+
+.#{$TOKEN_PREFIX_BASE_DEFAULT}container {
+  max-width: $TOKEN_SIZE_WIDTH_CONTAINER;
+}

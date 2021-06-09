@@ -1,0 +1,23 @@
+@import '@tokens/variables.scss';
+
+body {
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}static	{
+    position: static;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}fixed {
+    position: fixed;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}absolute {
+    position: absolute;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}relative {
+    position: relative;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}sticky {
+    position: sticky;
+  }	
+}

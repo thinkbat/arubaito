@@ -1,0 +1,27 @@
+@import '@tokens/variables.scss';
+
+body {
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-baseline	{
+    vertical-align: baseline;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-top {
+    vertical-align: top;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-middle {
+    vertical-align: middle;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-bottom {
+    vertical-align: bottom;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-text-top {
+    vertical-align: text-top;
+  }
+  
+  .#{$TOKEN_PREFIX_BASE_DEFAULT}align-text-bottom {
+    vertical-align: text-bottom;
+  }
+}
