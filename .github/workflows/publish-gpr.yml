@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: 12
       - run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NODE_AUTH_TOKEN }}" > ~/.npmrc
           npm ci
           npm run build:components
           npm publish
